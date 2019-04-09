@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.portfolio-realisations {
+  padding: 0 2em;
+}
+
+/* Boutons Liste des portfolios */
+ul#realisation-filter {
+  list-style: none;
+  margin: 40px 0 20px 0;
+  padding: 0;
+}
+
+ul#realisation-filter li {
+  display: inline-block;
+  margin: 0 0.3em 1em 0;
+}
+
+ul#realisation-filter li a.btn {
+  color: #333;
+  text-shadow: none;
+  border: 1px solid #eee;
+  border-radius: 0;
+  background: white;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 0.6em 1em;
+  margin-bottom: 0.6em;
+}
+
+ul#realisation-filter li a.btn.active {
+  background: #607d8b;
+  color: #f1f1f1;
+}
+
+/* Grille portfolio */
+ul#portfolio-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* fluide de 1 colonne à 4 colonnes */
+.item-sizer, .item-portfolio {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 10px 10px 0;
+}
+
+.item-sizer, .item-portfolio {
+  width: 100%;
+}
+
+@media screen and (min-width: 25em) {
+  .item-sizer,
+  .item-portfolio {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .item-sizer,
+  .item-portfolio {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .item-sizer,
+  .item-portfolio {
+    width: 25%;
+  }
+}
+
+h2.projet-title {
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1px solid #eee;
+  background-color: beige;
+}
+
+li h2.projet-title .thumbnail-overlay {
+  position: relative;
+}
+
+li h2.projet-title .thumbnail-overlay .lire {
+  font-weight: normal;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #f28c18;
+  background-color: rgba(242, 140, 24, 0.7);
+}
+
+li h2.projet-title .thumbnail-overlay:hover .overlay,
+li h2.projet-title .thumbnail-overlay.hover_effect .overlay {
+  opacity: 1;
+}
+
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.lire {
+  font-family: 'Genericons';
+  line-height: 1;
+  color: #fff;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  font-size: 50px;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=portfolio.css.map */
